@@ -10,7 +10,6 @@ end
 def pingpong(x)
     value = 0
     swap_value = 1
-    arr_value = []
     for i in 1..x
         value += swap_value
         if i % DIGIT == 0 || hasThisDigit?(i,DIGIT)
