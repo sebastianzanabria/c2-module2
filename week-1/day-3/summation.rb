@@ -1,5 +1,5 @@
 def summation(n)
-    (1..n).map{ |num| yield num }.reduce { |sum, num| sum + num }
+    (1..n).reduce(0) { |sum, num| sum + yield(num) }
 end
   
 puts summation(3) { |val| val * 2 }
